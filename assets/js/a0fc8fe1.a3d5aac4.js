@@ -1,0 +1,38 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[2146],{54479:(e,t,n)=>{n.d(t,{D:()=>m,Z:()=>s});var o=n(25773),a=n(27378),i=n(67468),r=n(45666);const l=i.ZP.div`
+  margin-bottom: var(--size-spacing-09);
+
+  & > * {
+    margin-bottom: var(--size-spacing-05);
+  }
+
+  ${e=>{let{$columns:t}=e;return t>=2&&i.iv`
+      display: grid;
+      column-gap: var(--size-spacing-05);
+      row-gap: var(--size-spacing-05);
+      grid-template-columns: repeat(${t}, 1fr);
+
+      & > * {
+        margin-bottom: 0;
+      }
+    `}}
+`;const s=function(e){let{children:t,columns:n=1,...i}=e;return a.createElement(r.Z,null,(()=>a.createElement(l,(0,o.Z)({$columns:n},i),t)))};var d=n(89620);const c=(0,i.ZP)(d.Z)`
+  height: 100%;
+
+  p {
+    &:only-child,
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ${e=>{let{$featured:t}=e;return t&&i.iv`
+      border-color: var(--highlight-border);
+    `}}
+
+  ${e=>{let{$centered:t}=e;return t&&i.iv`
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    `}}
+`;const m=function(e){let{children:t,featured:n=!1,centered:o=!1,className:i}=e;return a.createElement(c,{$featured:n,$centered:o,className:i},t)}},45666:(e,t,n)=>{n.d(t,{Z:()=>i});var o=n(27378),a=n(77524);function i(e){let{children:t,fallback:n}=e;return(0,a.Z)()?o.createElement(o.Fragment,null,t?.()):n??null}},87954:(e,t,n)=>{n.d(t,{Z:()=>v});var o,a=n(25773),i=n(30808),r=n(27378),l=n(67468),s=(n(23615),n(63559)),d=n(70421),c=n(75387),m=n(26503);const p=["disabled","as","children","type","kind","size","startIcon","endIcon","ia","loading","fluid"],u="Button",y=(0,l.ZP)(c.Z).withConfig({displayName:"Button__Root",componentId:"tg-1wm__sc-7cbhwm-0"})([""]),f=(0,d.Z)(u,(0,r.forwardRef)(((e,t)=>{let{disabled:n,as:l,children:d,type:c=f.types.button,kind:u=f.kinds.primary,size:v=f.sizes.md,startIcon:g,endIcon:b,ia:k=!1,loading:Z=!1,fluid:x=!1}=e,h=(0,i.Z)(e,p);return r.createElement(y,(0,a.Z)({ref:t,loading:Z,fluid:x,forwardedAs:l,size:v,disabled:n||Z,kind:u,type:c,ia:k},h),Z?r.createElement(m.Z,{size:m.Z.sizes.sm}):k?g||o||(o=r.createElement(s.Z,{title:"IA","aria-hidden":"true"})):g,d,b)})));f.displayName=u,f.sizes=c.Z.sizes,f.kinds=c.Z.kinds,f.types=c.Z.types;const v=f},42260:(e,t,n)=>{n.d(t,{Z:()=>f});var o=n(25773),a=n(30808),i=n(27378),r=n(31542),l=(n(23615),n(24308)),s=n(50046),d=n(61855),c=n(90496),m=n(66644),p=n(10716);const u=["onStart","onEnd","style","children","duration","from","to","hiddenVisibility","keepMounted","unmount","in"],y=(0,i.forwardRef)(((e,t)=>{let{onStart:n,onEnd:c,style:f,children:v=null,duration:g=y.durations.normal,from:b=0,to:k=1,hiddenVisibility:Z=!1,keepMounted:x=!0,unmount:h=!1,in:E=!1}=e,O=(0,a.Z)(e,u);const z=x&&!h,w=(0,i.useRef)(null),I=(0,i.useCallback)((e=>{w.current=(0,r.findDOMNode)(e)}),[]),C=(0,m.Z)([I,v.ref,t]),j=()=>(0,s.Z)(c)&&c({target:w.current}),N=()=>(0,s.Z)(n)&&n({target:w.current}),$=(0,d.Z)(g,"ms"),M={willChange:"opacity",transition:"opacity ".concat($,"ms var(--motion-timing-function-ease-in-out)"),opacity:b};let F=$,S={entering:{opacity:k},entered:{opacity:k},exiting:{opacity:b},exited:{opacity:b}};z||(S={entering:{opacity:b},entered:{opacity:k},exiting:{opacity:b},exited:{opacity:b}},F={enter:0,exit:$});const R=i.isValidElement(v)&&v.props?v.props.style:{};return(0,p.Z)({keepMounted:!x||void 0,originName:"Fade",fallback:"Use `unmount` property instead."}),i.createElement(l.ZP,(0,o.Z)({mountOnEnter:!z,unmountOnExit:!z,nodeRef:w,onEnter:N,onEntered:j,onExit:N,onExited:j,in:E,timeout:F,appear:!0},O),((e,t)=>i.cloneElement(v,Object.assign({ref:C,style:Object.assign({visibility:Z&&"exited"===e&&!E?"hidden":void 0},f,M,R,S[e])},t))))}));y.displayName="Fade",y.durations={extraFast:c.lI.extraFast,fast:c.lI.fast,normal:c.lI.normal,slow:c.lI.slow,extraSlow:c.lI.extraSlow,ultraSlow:c.lI.ultraSlow};const f=y},32083:(e,t,n)=>{n.d(t,{Z:()=>p});var o=n(25773),a=n(30808),i=n(27378),r=(n(23615),n(67468)),l=n(58190),s=n(42260);const d=["style","children","invisible","keepMounted","zIndex","open"],c=r.ZP.div.withConfig({displayName:"Overlay__Root",componentId:"tg-1wm__sc-15sbry8-0"})(["position:fixed;top:0;left:0;right:0;bottom:0;display:flex;justify-content:center;align-items:center;background-color:",";"],(e=>{let{$invisible:t}=e;return t?"transparent":"rgba(0, 34, 51, 0.5)"})),m=(0,i.forwardRef)(((e,t)=>{let{style:n,children:r=null,invisible:m=!1,keepMounted:p=!1,zIndex:u=1,open:y=!1}=e,f=(0,a.Z)(e,d),v=Object.assign({zIndex:l.zindexBack},n),g=r;return"string"==typeof g&&(g=i.createElement(i.Fragment,null,g)),i.isValidElement(g)&&(v=Object.assign({zIndex:u},n),g=i.cloneElement(g,Object.assign({},g.props,{style:Object.assign({},g.style,{zIndex:v.zIndex+1})}))),i.createElement(s.Z,{in:y,hiddenVisibility:!0,unmount:!p},i.createElement(c,(0,o.Z)({},f,{ref:t,open:y,$invisible:m,style:v,"aria-hidden":"true"}),g))}));m.displayName="Overlay",m.Style=c;const p=m},20718:(e,t,n)=>{n.r(t),n.d(t,{assets:()=>g,contentTitle:()=>f,default:()=>Z,frontMatter:()=>y,metadata:()=>v,toc:()=>b});var o=n(25773),a=n(27378),i=n(35318),r=n(80621),l=n(82544),s=n(54479),d=n(87954),c=n(32083),m=n(89620),p=n(64723);const u=function(){const[e,t]=(0,a.useState)(!1);return a.createElement(a.Fragment,null,a.createElement(d.Z,{kind:d.Z.kinds.secondary,onClick:()=>{t(!0)}},a.createElement(p.Z,{id:"ExampleOverlay.openButton"},"Open Overlay")),a.createElement(c.Z,{open:e},a.createElement(m.Z,null,a.createElement(d.Z,{kind:d.Z.kinds.secondary,onClick:()=>{t(!1)}},a.createElement(p.Z,{id:"ExampleOverlay.closeButton"},"Close Overlay")))))},y={title:"Overlay",description:"Overlay \xe9 respons\xe1vel por cobrir toda a interface, ocupando a largura e altura dispon\xedveis, fazendo com que o foco seja nos elementos exibidos acima do componente."},f=void 0,v={unversionedId:"components/overlay",id:"components/overlay",title:"Overlay",description:"Overlay \xe9 respons\xe1vel por cobrir toda a interface, ocupando a largura e altura dispon\xedveis, fazendo com que o foco seja nos elementos exibidos acima do componente.",source:"@site/i18n/pt-BR/docusaurus-plugin-content-docs/current/components/overlay.md",sourceDirName:"components",slug:"/components/overlay",permalink:"/tangram-doc/docs/components/overlay",draft:!1,editUrl:"https://github.com/ResultadosDigitais/tangram/edit/next/docusaurus/docs/components/overlay.md",tags:[],version:"current",frontMatter:{title:"Overlay",description:"Overlay \xe9 respons\xe1vel por cobrir toda a interface, ocupando a largura e altura dispon\xedveis, fazendo com que o foco seja nos elementos exibidos acima do componente."},sidebar:"mySidebar",previous:{title:"Main",permalink:"/tangram-doc/docs/components/main"},next:{title:"Shell",permalink:"/tangram-doc/docs/components/shell"}},g={},b=[{value:"Feedback",id:"feedback",level:2}],k={toc:b};function Z(e){let{components:t,...n}=e;return(0,i.kt)("wrapper",(0,o.Z)({},k,n,{components:t,mdxType:"MDXLayout"}),(0,i.kt)(r.Z,{current:"docs",name:"overlay",mdxType:"ComponentTab"}),(0,i.kt)("p",null,(0,i.kt)("inlineCode",{parentName:"p"},"Overlay")," \xe9 respons\xe1vel por cobrir toda a interface, ocupando a largura e altura dispon\xedveis, fazendo com que o foco seja nos elementos exibidos acima do componente."),(0,i.kt)("p",null,"O ",(0,i.kt)("inlineCode",{parentName:"p"},"Overlay")," impede que a pessoa realize qualquer intera\xe7\xe3o com os elementos que ficam na camada debaixo."),(0,i.kt)(s.Z,{mdxType:"CardGrid"},(0,i.kt)(s.D,{centered:!0,mdxType:"CardGridItem"},(0,i.kt)(u,{mdxType:"ExampleOverlay"}))),(0,i.kt)("h2",{id:"feedback"},"Feedback"),(0,i.kt)(l.Z,{mdxType:"FeedbackBlock"}))}Z.isMDXComponent=!0}}]);
