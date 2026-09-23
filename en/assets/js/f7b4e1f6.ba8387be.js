@@ -1,0 +1,38 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[4018],{54479:(e,t,n)=>{n.d(t,{D:()=>p,Z:()=>s});var i=n(25773),o=n(27378),a=n(67468),r=n(45666);const l=a.ZP.div`
+  margin-bottom: var(--size-spacing-09);
+
+  & > * {
+    margin-bottom: var(--size-spacing-05);
+  }
+
+  ${e=>{let{$columns:t}=e;return t>=2&&a.iv`
+      display: grid;
+      column-gap: var(--size-spacing-05);
+      row-gap: var(--size-spacing-05);
+      grid-template-columns: repeat(${t}, 1fr);
+
+      & > * {
+        margin-bottom: 0;
+      }
+    `}}
+`;const s=function(e){let{children:t,columns:n=1,...a}=e;return o.createElement(r.Z,null,(()=>o.createElement(l,(0,i.Z)({$columns:n},a),t)))};var c=n(89620);const d=(0,a.ZP)(c.Z)`
+  height: 100%;
+
+  p {
+    &:only-child,
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ${e=>{let{$featured:t}=e;return t&&a.iv`
+      border-color: var(--highlight-border);
+    `}}
+
+  ${e=>{let{$centered:t}=e;return t&&a.iv`
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    `}}
+`;const p=function(e){let{children:t,featured:n=!1,centered:i=!1,className:a}=e;return o.createElement(d,{$featured:n,$centered:i,className:a},t)}},45666:(e,t,n)=>{n.d(t,{Z:()=>a});var i=n(27378),o=n(77524);function a(e){let{children:t,fallback:n}=e;return(0,o.Z)()?i.createElement(i.Fragment,null,t?.()):n??null}},87954:(e,t,n)=>{n.d(t,{Z:()=>g});var i,o=n(25773),a=n(30808),r=n(27378),l=n(67468),s=(n(23615),n(63559)),c=n(70421),d=n(75387),p=n(26503);const m=["disabled","as","children","type","kind","size","startIcon","endIcon","ia","loading","fluid"],u="Button",y=(0,l.ZP)(d.Z).withConfig({displayName:"Button__Root",componentId:"tg-1E1__sc-7cbhwm-0"})([""]),h=(0,c.Z)(u,(0,r.forwardRef)(((e,t)=>{let{disabled:n,as:l,children:c,type:d=h.types.button,kind:u=h.kinds.primary,size:g=h.sizes.md,startIcon:v,endIcon:f,ia:b=!1,loading:k=!1,fluid:Z=!1}=e,x=(0,a.Z)(e,m);return r.createElement(y,(0,o.Z)({ref:t,loading:k,fluid:Z,forwardedAs:l,size:g,disabled:n||k,kind:u,type:d,ia:b},x),k?r.createElement(p.Z,{size:p.Z.sizes.sm}):b?v||i||(i=r.createElement(s.Z,{title:"IA","aria-hidden":"true"})):v,c,f)})));h.displayName=u,h.sizes=d.Z.sizes,h.kinds=d.Z.kinds,h.types=d.Z.types;const g=h},42260:(e,t,n)=>{n.d(t,{Z:()=>h});var i=n(25773),o=n(30808),a=n(27378),r=n(31542),l=(n(23615),n(24308)),s=n(50046),c=n(61855),d=n(90496),p=n(66644),m=n(10716);const u=["onStart","onEnd","style","children","duration","from","to","hiddenVisibility","keepMounted","unmount","in"],y=(0,a.forwardRef)(((e,t)=>{let{onStart:n,onEnd:d,style:h,children:g=null,duration:v=y.durations.normal,from:f=0,to:b=1,hiddenVisibility:k=!1,keepMounted:Z=!0,unmount:x=!1,in:E=!1}=e,w=(0,o.Z)(e,u);const O=Z&&!x,I=(0,a.useRef)(null),z=(0,a.useCallback)((e=>{I.current=(0,r.findDOMNode)(e)}),[]),C=(0,p.Z)([z,g.ref,t]),N=()=>(0,s.Z)(d)&&d({target:I.current}),$=()=>(0,s.Z)(n)&&n({target:I.current}),M=(0,c.Z)(v,"ms"),F={willChange:"opacity",transition:"opacity ".concat(M,"ms var(--motion-timing-function-ease-in-out)"),opacity:f};let S=M,T={entering:{opacity:b},entered:{opacity:b},exiting:{opacity:f},exited:{opacity:f}};O||(T={entering:{opacity:f},entered:{opacity:b},exiting:{opacity:f},exited:{opacity:f}},S={enter:0,exit:M});const j=a.isValidElement(g)&&g.props?g.props.style:{};return(0,m.Z)({keepMounted:!Z||void 0,originName:"Fade",fallback:"Use `unmount` property instead."}),a.createElement(l.ZP,(0,i.Z)({mountOnEnter:!O,unmountOnExit:!O,nodeRef:I,onEnter:$,onEntered:N,onExit:$,onExited:N,in:E,timeout:S,appear:!0},w),((e,t)=>a.cloneElement(g,Object.assign({ref:C,style:Object.assign({visibility:k&&"exited"===e&&!E?"hidden":void 0},h,F,j,T[e])},t))))}));y.displayName="Fade",y.durations={extraFast:d.lI.extraFast,fast:d.lI.fast,normal:d.lI.normal,slow:d.lI.slow,extraSlow:d.lI.extraSlow,ultraSlow:d.lI.ultraSlow};const h=y},32083:(e,t,n)=>{n.d(t,{Z:()=>m});var i=n(25773),o=n(30808),a=n(27378),r=(n(23615),n(67468)),l=n(58190),s=n(42260);const c=["style","children","invisible","keepMounted","zIndex","open"],d=r.ZP.div.withConfig({displayName:"Overlay__Root",componentId:"tg-1E1__sc-15sbry8-0"})(["position:fixed;top:0;left:0;right:0;bottom:0;display:flex;justify-content:center;align-items:center;background-color:",";"],(e=>{let{$invisible:t}=e;return t?"transparent":"rgba(0, 34, 51, 0.5)"})),p=(0,a.forwardRef)(((e,t)=>{let{style:n,children:r=null,invisible:p=!1,keepMounted:m=!1,zIndex:u=1,open:y=!1}=e,h=(0,o.Z)(e,c),g=Object.assign({zIndex:l.zindexBack},n),v=r;return"string"==typeof v&&(v=a.createElement(a.Fragment,null,v)),a.isValidElement(v)&&(g=Object.assign({zIndex:u},n),v=a.cloneElement(v,Object.assign({},v.props,{style:Object.assign({},v.style,{zIndex:g.zIndex+1})}))),a.createElement(s.Z,{in:y,hiddenVisibility:!0,unmount:!m},a.createElement(d,(0,i.Z)({},h,{ref:t,open:y,$invisible:p,style:g,"aria-hidden":"true"}),v))}));p.displayName="Overlay",p.Style=d;const m=p},38819:(e,t,n)=>{n.r(t),n.d(t,{assets:()=>v,contentTitle:()=>h,default:()=>k,frontMatter:()=>y,metadata:()=>g,toc:()=>f});var i=n(25773),o=n(27378),a=n(35318),r=n(80621),l=n(82544),s=n(54479),c=n(87954),d=n(32083),p=n(89620),m=n(64723);const u=function(){const[e,t]=(0,o.useState)(!1);return o.createElement(o.Fragment,null,o.createElement(c.Z,{kind:c.Z.kinds.secondary,onClick:()=>{t(!0)}},o.createElement(m.Z,{id:"ExampleOverlay.openButton"},"Open Overlay")),o.createElement(d.Z,{open:e},o.createElement(p.Z,null,o.createElement(c.Z,{kind:c.Z.kinds.secondary,onClick:()=>{t(!1)}},o.createElement(m.Z,{id:"ExampleOverlay.closeButton"},"Close Overlay")))))},y={title:"Overlay",description:"Overlay is responsible for covering the entire interface, occupying the available width and height, causing the focus to be on the elements displayed above the component."},h=void 0,g={unversionedId:"components/overlay",id:"components/overlay",title:"Overlay",description:"Overlay is responsible for covering the entire interface, occupying the available width and height, causing the focus to be on the elements displayed above the component.",source:"@site/docs/components/overlay.md",sourceDirName:"components",slug:"/components/overlay",permalink:"/en/docs/components/overlay",draft:!1,editUrl:"https://github.com/ResultadosDigitais/tangram/edit/next/docusaurus/docs/components/overlay.md",tags:[],version:"current",frontMatter:{title:"Overlay",description:"Overlay is responsible for covering the entire interface, occupying the available width and height, causing the focus to be on the elements displayed above the component."},sidebar:"mySidebar",previous:{title:"Main",permalink:"/en/docs/components/main"},next:{title:"Shell",permalink:"/en/docs/components/shell"}},v={},f=[{value:"Feedback",id:"feedback",level:2}],b={toc:f};function k(e){let{components:t,...n}=e;return(0,a.kt)("wrapper",(0,i.Z)({},b,n,{components:t,mdxType:"MDXLayout"}),(0,a.kt)(r.Z,{current:"docs",name:"overlay",mdxType:"ComponentTab"}),(0,a.kt)("p",null,(0,a.kt)("inlineCode",{parentName:"p"},"Overlay")," is responsible for covering the entire interface, occupying the available width and height, causing the focus to be on the elements displayed above the component."),(0,a.kt)("p",null,"The ",(0,a.kt)("inlineCode",{parentName:"p"},"Overlay")," prevents the person from performing any interaction with the elements that are on the layer below."),(0,a.kt)(s.Z,{mdxType:"CardGrid"},(0,a.kt)(s.D,{centered:!0,mdxType:"CardGridItem"},(0,a.kt)(u,{mdxType:"ExampleOverlay"}))),(0,a.kt)("h2",{id:"feedback"},"Feedback"),(0,a.kt)(l.Z,{mdxType:"FeedbackBlock"}))}k.isMDXComponent=!0}}]);
